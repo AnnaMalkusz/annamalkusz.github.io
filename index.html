@@ -7,19 +7,16 @@
 
   <style>
     :root {
-      --sage: #7D9A72;
-      --sage-dark: #496B43;
+      --sage: #6F8F63;
+      --sage-dark: #3F673E;
       --cream: #F7F3EE;
       --white: #FFFCFA;
-      --blush: #EFCAD8;
-      --lavender: #C9BDF2;
-      --blue: #B8DDF2;
-      --butter: #F2DDA6;
-      --sand: #E8D6C3;
+      --blush: #F1D5DF;
+      --blue: #DDEDF3;
+      --sand: #E9D8C4;
       --ink: #252221;
       --muted: #6B625C;
       --line: rgba(37, 34, 33, 0.12);
-      --shadow: rgba(73, 107, 67, 0.18);
     }
 
     * {
@@ -30,9 +27,8 @@
       margin: 0;
       font-family: Inter, Arial, sans-serif;
       background:
-        radial-gradient(circle at 8% 18%, rgba(239, 202, 216, 0.45), transparent 28%),
-        radial-gradient(circle at 88% 10%, rgba(184, 221, 242, 0.45), transparent 25%),
-        radial-gradient(circle at 75% 72%, rgba(242, 221, 166, 0.38), transparent 28%),
+        radial-gradient(circle at 8% 12%, rgba(241, 213, 223, 0.5), transparent 26%),
+        radial-gradient(circle at 92% 8%, rgba(221, 237, 243, 0.7), transparent 30%),
         var(--cream);
       color: var(--ink);
     }
@@ -40,7 +36,7 @@
     .page {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 34px 22px 56px;
+      padding: 28px 22px 54px;
     }
 
     .topbar {
@@ -50,14 +46,12 @@
       padding: 13px 22px;
       display: flex;
       justify-content: space-between;
-      gap: 16px;
       align-items: center;
-      margin-bottom: 30px;
+      margin-bottom: 26px;
       font-size: 13px;
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      box-shadow: 0 16px 40px rgba(73, 107, 67, 0.16);
     }
 
     .topbar a {
@@ -66,62 +60,66 @@
     }
 
     .hero {
-      background: rgba(255, 252, 250, 0.86);
+      background: rgba(255, 252, 250, 0.9);
       border: 1px solid var(--line);
-      border-radius: 38px;
+      border-radius: 34px;
       overflow: hidden;
       display: grid;
-      grid-template-columns: 350px 1fr;
-      box-shadow: 0 28px 70px rgba(73, 107, 67, 0.14);
-      position: relative;
+      grid-template-columns: 330px 1fr;
+      box-shadow: 0 24px 60px rgba(37, 34, 33, 0.08);
     }
 
     .photo-panel {
-      padding: 42px 34px;
+      min-height: 390px;
+      padding: 26px;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
-      background: linear-gradient(145deg, rgba(239, 202, 216, 0.32), rgba(184, 221, 242, 0.25));
+      background: linear-gradient(145deg, rgba(241, 213, 223, 0.42), rgba(221, 237, 243, 0.42));
     }
 
     .photo-panel::before {
       content: "";
       position: absolute;
-      width: 240px;
-      height: 240px;
-      background: rgba(125, 154, 114, 0.22);
-      border-radius: 42% 58% 51% 49%;
-      top: 38px;
-      left: 48px;
+      width: 230px;
+      height: 230px;
+      background: rgba(111, 143, 99, 0.16);
+      border-radius: 50%;
+      top: 28px;
+      left: 54px;
     }
 
     .photo-panel::after {
       content: "";
       position: absolute;
-      width: 150px;
-      height: 150px;
-      background: rgba(239, 202, 216, 0.55);
+      width: 135px;
+      height: 135px;
+      background: rgba(241, 213, 223, 0.7);
       border-radius: 50%;
-      right: 30px;
-      bottom: 48px;
+      right: 36px;
+      bottom: 28px;
     }
 
     .profile-photo {
-      width: 275px;
-      height: 275px;
+      width: 260px;
+      height: 300px;
       object-fit: cover;
-      border-radius: 34px;
-      box-shadow: 16px 16px 0 rgba(239, 202, 216, 0.55), 0 18px 45px rgba(37, 34, 33, 0.12);
-      background: var(--cream);
+      object-position: center;
+      border-radius: 30px;
+      box-shadow:
+        14px 14px 0 rgba(241, 213, 223, 0.75),
+        0 18px 38px rgba(37, 34, 33, 0.12);
       position: relative;
       z-index: 2;
     }
 
     .intro {
-      padding: 54px 56px;
-      position: relative;
+      padding: 44px 52px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .eyebrow {
@@ -130,40 +128,40 @@
       font-weight: 900;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      font-size: 58px;
+      font-size: 56px;
       line-height: 1;
-      margin: 0 0 20px;
+      margin: 0 0 18px;
       letter-spacing: -0.05em;
     }
 
     .subtitle {
-      font-size: 19px;
+      font-size: 18px;
       color: var(--muted);
-      line-height: 1.58;
-      max-width: 640px;
-      margin: 0 0 28px;
+      line-height: 1.55;
+      max-width: 650px;
+      margin: 0 0 24px;
     }
 
     .badges {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      max-width: 720px;
+      max-width: 700px;
     }
 
     .badge {
-      background: rgba(255, 252, 250, 0.8);
+      background: rgba(255, 252, 250, 0.86);
       border: 1px solid rgba(37, 34, 33, 0.11);
       color: var(--ink);
       padding: 10px 14px;
       border-radius: 999px;
       font-size: 13px;
       font-weight: 850;
-      box-shadow: 0 8px 20px rgba(37, 34, 33, 0.04);
+      box-shadow: 0 8px 18px rgba(37, 34, 33, 0.04);
     }
 
     .badge::before {
@@ -171,35 +169,8 @@
       color: var(--sage);
     }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin: 34px 0 6px;
-    }
-
-    .stat {
-      background: rgba(255, 252, 250, 0.72);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 20px;
-      box-shadow: 0 18px 40px rgba(73, 107, 67, 0.08);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 28px;
-      letter-spacing: -0.04em;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 750;
-    }
-
     .section-header {
-      margin: 62px 0 24px;
+      margin: 58px 0 24px;
       display: flex;
       align-items: end;
       justify-content: space-between;
@@ -245,15 +216,24 @@
       box-shadow: 0 30px 70px rgba(37, 34, 33, 0.13);
     }
 
+    .job {
+      background: linear-gradient(180deg, rgba(221, 237, 243, 0.5), rgba(255, 252, 250, 0.96));
+    }
+
+    .trader {
+      background: linear-gradient(180deg, rgba(233, 216, 196, 0.72), rgba(255, 252, 250, 0.96));
+    }
+
     .project-preview {
       width: 100%;
-      height: 245px;
+      height: 250px;
       object-fit: cover;
-      object-position: top center;
+      object-position: center;
       border-radius: 24px;
-      border: 1px solid rgba(37, 34, 33, 0.08);
+      border: 1px solid rgba(37, 34, 33, 0.1);
       margin-bottom: 24px;
-      background: var(--cream);
+      background: rgba(255, 252, 250, 0.7);
+      display: block;
     }
 
     .project-tag {
@@ -294,7 +274,7 @@
       font-weight: 800;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(125, 154, 114, 0.12);
+      background: rgba(111, 143, 99, 0.13);
       color: var(--sage-dark);
     }
 
@@ -331,17 +311,9 @@
     }
 
     .btn-secondary {
-      background: rgba(255, 252, 250, 0.8);
+      background: rgba(255, 252, 250, 0.82);
       color: var(--ink);
       border-color: rgba(37, 34, 33, 0.12);
-    }
-
-    .job {
-      background: linear-gradient(180deg, rgba(184, 221, 242, 0.28), rgba(255, 252, 250, 0.95));
-    }
-
-    .trader {
-      background: linear-gradient(180deg, rgba(232, 214, 195, 0.62), rgba(255, 252, 250, 0.95));
     }
 
     .footer {
@@ -357,16 +329,19 @@
         grid-template-columns: 1fr;
       }
 
+      .photo-panel {
+        min-height: 330px;
+      }
+
       .intro {
-        padding: 36px;
+        padding: 34px;
       }
 
       h1 {
         font-size: 44px;
       }
 
-      .grid,
-      .stats {
+      .grid {
         grid-template-columns: 1fr;
       }
 
@@ -412,31 +387,9 @@
           <span class="badge">Process Improvement</span>
           <span class="badge">Business Analysis</span>
           <span class="badge">Workflow Automation</span>
-          <span class="badge">Generative AI</span>
-          <span class="badge">Excel VBA</span>
-          <span class="badge">Stakeholder Communication</span>
+          <span class="badge">Gen AI</span>
           <span class="badge">AI-Assisted Tools</span>
-          <span class="badge">Product Thinking</span>
         </div>
-
-        <section class="stats">
-          <div class="stat">
-            <strong>30+</strong>
-            <span>Automation solutions</span>
-          </div>
-          <div class="stat">
-            <strong>150+</strong>
-            <span>Retail stores supported</span>
-          </div>
-          <div class="stat">
-            <strong>8</strong>
-            <span>European markets</span>
-          </div>
-          <div class="stat">
-            <strong>20+</strong>
-            <span>Cross-functional teams</span>
-          </div>
-        </section>
       </div>
     </section>
 
@@ -487,7 +440,7 @@
             post-session analysis and AI-assisted review.
           </p>
 
-          <div class="features trader">
+          <div class="features">
             <span class="feature">Trade log</span>
             <span class="feature">Session prep</span>
             <span class="feature">AI review</span>
