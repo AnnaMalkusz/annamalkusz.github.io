@@ -480,6 +480,36 @@
       grid-column: 1 / -1;
     }
 
+
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 18px;
+    }
+
+    .project-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 6px 10px;
+      border: 1px solid rgba(45, 42, 35, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.46);
+      color: #62665f;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .project-pill.featured {
+      background: rgba(32, 33, 31, 0.90);
+      color: #fffdf8;
+      border-color: rgba(32, 33, 31, 0.90);
+    }
+
     /* =========================
        Footer
        ========================= */
@@ -666,6 +696,14 @@
               A portfolio-ready workflow application for managing job opportunities, importing structured role data with AI assistance, preparing for interviews and tracking the entire recruitment process in one place.
             </p>
 
+            <div class="project-meta" aria-label="AI Job Application Tracker technologies">
+              <span class="project-pill featured">Portfolio Edition</span>
+              <span class="project-pill">HTML</span>
+              <span class="project-pill">CSS</span>
+              <span class="project-pill">JavaScript</span>
+              <span class="project-pill">AI-Assisted</span>
+            </div>
+
             <div class="project-links button-grid" aria-label="AI Job Application Tracker links">
               <a class="button-link primary project-link-wide" href="https://annamalkusz.github.io/ai-job-tracker/" target="_blank" rel="noopener noreferrer">Live Demo</a>
               <a class="button-link" href="https://github.com/AnnaMalkusz/ai-job-tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -691,6 +729,14 @@
             <p class="project-description">
               A reflective trading journal designed to improve decision-making through session preparation, trade documentation, emotional analysis and AI-assisted performance review.
             </p>
+
+            <div class="project-meta" aria-label="Trader's Journal technologies">
+              <span class="project-pill featured">Portfolio Edition</span>
+              <span class="project-pill">HTML</span>
+              <span class="project-pill">CSS</span>
+              <span class="project-pill">JavaScript</span>
+              <span class="project-pill">AI-Assisted</span>
+            </div>
 
             <div class="project-links button-grid" aria-label="Trader's Journal links">
               <a class="button-link primary project-link-wide" href="https://annamalkusz.github.io/traders-journal/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -718,11 +764,53 @@
               A beautifully designed pregnancy companion that helps expectant parents organize appointments, medical documents, shopping lists, memories and important milestones in one intuitive workspace.
             </p>
 
+            <div class="project-meta" aria-label="My Pregnancy Story technologies">
+              <span class="project-pill featured">Portfolio Edition</span>
+              <span class="project-pill">HTML</span>
+              <span class="project-pill">CSS</span>
+              <span class="project-pill">JavaScript</span>
+              <span class="project-pill">AI-Assisted</span>
+            </div>
+
             <div class="project-links button-grid" aria-label="My Pregnancy Story links">
               <a class="button-link primary project-link-wide" href="https://annamalkusz.github.io/my-pregnancy-story/" target="_blank" rel="noopener noreferrer">Live Demo</a>
               <a class="button-link" href="https://github.com/AnnaMalkusz/my-pregnancy-story" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a class="button-link" href="https://annamalkusz.github.io/my-pregnancy-story/Quick-start-guide.pdf" target="_blank" rel="noopener noreferrer">Quick Start Guide</a>
               <a class="button-link project-link-wide" href="https://annamalkusz.github.io/my-pregnancy-story/Behind-the-project.pdf" target="_blank" rel="noopener noreferrer">Behind the Project</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project card template: duplicate this article and replace category, title, description, image, links and --project-bg. -->
+        <article class="project-card" style="--project-bg: linear-gradient(145deg, rgba(223, 232, 220, 0.95), rgba(203, 220, 232, 0.82));">
+          <div class="project-visual">
+            <img src="https://annamalkusz.github.io/my-transformation-preview.png" alt="My Transformation preview" />
+          </div>
+
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="project-type">Wellness Tracker</span>
+            </div>
+
+            <h3>My Transformation</h3>
+
+            <p class="project-description">
+              A personal transformation companion designed to support long-term lifestyle changes by tracking body measurements, progress photos, habits, milestones and personal achievements in one structured workspace.
+            </p>
+
+            <div class="project-meta" aria-label="My Transformation technologies">
+              <span class="project-pill featured">Portfolio Edition</span>
+              <span class="project-pill">HTML</span>
+              <span class="project-pill">CSS</span>
+              <span class="project-pill">JavaScript</span>
+              <span class="project-pill">AI-Assisted</span>
+            </div>
+
+            <div class="project-links button-grid" aria-label="My Transformation links">
+              <a class="button-link primary project-link-wide" href="https://annamalkusz.github.io/my-transformation/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a class="button-link" href="https://github.com/AnnaMalkusz/my-transformation" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="button-link" href="https://annamalkusz.github.io/my-transformation/Quick-start-guide.pdf" target="_blank" rel="noopener noreferrer">Quick Start Guide</a>
+              <a class="button-link project-link-wide" href="https://annamalkusz.github.io/my-transformation/Behind-the-project.pdf" target="_blank" rel="noopener noreferrer">Behind the Project</a>
             </div>
           </div>
         </article>
